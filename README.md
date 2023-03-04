@@ -5,3 +5,5 @@
 - html_leech.py reads the txt file mentioned above, writes down html content regarding subpages within the main url.
 
 - linkos.txt contains the scraped urls from given url, at this case, https://www.classcentral.com/
+
+- unfortunately, couldn't succeed translating html files :(
