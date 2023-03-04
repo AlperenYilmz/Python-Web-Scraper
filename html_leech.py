@@ -5,8 +5,10 @@ from pathlib import Path
 filename = 'linkos.txt'
 try:
     with open(filename, 'r') as file:
-        urls = file.readlines()
-except FileNotFoundError:
+        urls = file.readlines()    # reading lines from 'linkos.txt'
+        
+        
+except FileNotFoundError:   # throwing exception if 'linkos.txt' cannot be found
     print(f"Error: The file {filename} does not exist.")
     exit()
 
@@ -29,7 +31,7 @@ for url in urls:
         
         url=url.split("//")[-1]   # this removes https:// part of URL
         url_parts = url.split('/')
-        for part_index in range(len(url_parts)-1):    # make directories until the final html file
+        for part_index in range(len(url_parts)-1):    # make directories all the way down to the final html file
             directory = os.path.join(directory, url_parts[part_index])
             Path(directory).mkdir(exist_ok=True)
 
