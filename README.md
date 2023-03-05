@@ -4,7 +4,9 @@
 
 - **html_leech.py** reads the txt file mentioned above, writes down html content regarding subpages within the main url.
 
+- **dir_reader_translate.py** translates the text based content inside files written by **html_leech.py**, however, it also translates critical keywords of html codes, which disrupts the page structure, although translated content can be seen via terminal output.
+
 - **linkos.txt** contains the scraped urls from given url, at this case, https://www.classcentral.com/
 
-- unfortunately, couldn't succeed translating html files :(. Also, scraped html files size up to 350 mb
+- Scraped html files size up to 350 mb
 - Also note, for both .py files, don't forget to modify **headers** variable as your machine's user agent information.
